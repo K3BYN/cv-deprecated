@@ -1,0 +1,82 @@
+/*****************NAV*****************
+label 
+    .menu 
+        position: fixed
+        right: -100px
+        top: -100px
+        z-index: 100
+        width: 200px
+        height: 200px
+        background: rgba(0, 0, 0, 0.089)
+        border-radius: 50% 50% 50% 50%
+        -webkit-transition: .5s ease-in-out
+        transition: .5s ease-in-out
+        box-shadow: 0 0 0 0 rgba(255, 17, 0, 0), 0 0 0 0 rgb(255, 241, 240)
+        cursor: pointer
+    .hamburger 
+        position: absolute
+        top: 135px
+        left: 50px
+        width: 30px
+        height: 2px
+        background: #69D2e7
+        display: block
+        -webkit-transform-origin: center
+        transform-origin: center
+        -webkit-transition: .5s ease-in-out
+        transition: .5s ease-in-out
+    .hamburger:after, .hamburger:before 
+        -webkit-transition: .5s ease-in-out
+        transition: .5s ease-in-out
+        content: ""
+        position: absolute
+        display: block
+        width: 100%
+        height: 100%
+        background: #69d2e7
+    .hamburger:before 
+        top: -10px
+    .hamburger:after 
+        bottom: -10px
+    input 
+        display: none
+    input:checked + .menu 
+        box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.062), 0 0 0 100vh rgba(0, 0, 0, 0.027)
+        border-radius: 0
+    input:checked + .menu .hamburger 
+        -webkit-transform: rotate(45deg)
+        transform: rotate(45deg)
+    input:checked + .menu .hamburger:after 
+        -webkit-transform: rotate(90deg)
+        transform: rotate(90deg)
+        bottom: 0
+    input:checked + .menu .hamburger:before 
+        -webkit-transform: rotate(90deg)
+        transform: rotate(90deg)
+        top: 0
+    input:checked + .menu + ul  
+        opacity: 1
+        li
+            display: list-item !important
+
+    ul 
+        @media ( max-width: 1000px )
+            background-color: #fff
+        z-index: 200
+        position: fixed
+        top: 50%
+        left: 50%
+        -webkit-transform: translate(-50%, -50%)
+        transform: translate(-50%, -50%)
+        opacity: 0 
+        -webkit-transition: .25s 0s ease-in-out
+        transition: .25s 0s ease-in-out
+    li
+        display: none
+
+    a 
+        margin-bottom: 1em
+        display: block
+        color: #000000
+        text-decoration: none
+/*****************NAV*****************
