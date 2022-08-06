@@ -3,7 +3,7 @@
   position: absolute;
 }
 .cv .up-1 {
-  margin-top: -3%;
+  margin-top: -1%;
 }
 .cv .qr {
   max-width: 20%;
@@ -145,6 +145,12 @@
   .cv .s-skill h5 {
     font-size: 1.3rem;
   }
+}
+
+.about {
+  background-image: url("/under_construction.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .template {
