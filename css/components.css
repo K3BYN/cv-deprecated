@@ -1,0 +1,22 @@
+.page-footer {
+  width: 115px;
+  position: fixed;
+  right: 25px;
+  bottom: 10px;
+  display: flex;
+  align-items: cente;
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: black;
+}
+.page-footer a {
+  display: flex;
+  margin-left: 4px;
+}
+.page-footer span {
+  color: white;
+  align-self: center;
+}
+
+/*# sourceMappingURL=components.css.map */

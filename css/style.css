@@ -1,0 +1,44 @@
+body {
+  background-image: linear-gradient(150deg, #555155, #000, #555155);
+  color: white;
+}
+body img {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 100% auto;
+  border: solid 5px #ea005e;
+}
+body .header-presentation {
+  background: #ea005e;
+  padding: 5% 0;
+}
+body .shadow-panel {
+  box-shadow: 20px 0rem 20rem 0px #ea005e !important;
+}
+body .left-side {
+  background-color: #292829 !important;
+  height: 100vh;
+}
+body .right-side {
+  background-color: #000;
+  height: 100vh;
+}
+body .bar-color {
+  background-color: #ea005e;
+}
+body .progress-bar {
+  animation-duration: 6s;
+  animation-name: progressAnimation;
+}
+@keyframes progressAnimation {
+  from {
+    width: 0%;
+    background-color: #f898bf;
+  }
+  to {
+    background-color: #ea005e;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
